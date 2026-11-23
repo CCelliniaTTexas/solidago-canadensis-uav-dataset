@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this dataset, please cite both the dataset DOI and the article that describes it."
+message: "If you use this dataset, please cite the article that describes it and this repository."
 type: dataset
 title: "A nine-class UAV dataset of Solidago canadensis, Daishan Island, Zhoushan, China"
 abstract: >-
@@ -32,8 +32,7 @@ authors:
 version: "2"
 date-released: "2026-10-29"
 license: CC-BY-4.0
-doi: 10.17632/5pxk3ym2yv.2
-url: "https://data.mendeley.com/datasets/5pxk3ym2yv/2"
+url: "https://github.com/CCelliniaTTexas/solidago-canadensis-uav-dataset"
 keywords:
   - Solidago canadensis L.
   - semantic segmentation

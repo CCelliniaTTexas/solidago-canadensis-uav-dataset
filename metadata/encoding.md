@@ -106,7 +106,7 @@ testing both hypotheses against the published class proportions. Run it first.
 
 `data/masks/` ships the corrected set in **source encoding**, so converting it is the
 normal path. `corrections/masks_v2/` holds the same three corrected tiles in source
-encoding for patching a Mendeley v1 download, and `corrections/masks_9class/` holds
+encoding for patching an earlier v1 copy, and `corrections/masks_9class/` holds
 those three already converted. Copying the wrong one into the wrong folder is silent —
 the arrays still look like plausible label images. Keep one encoding per directory and
 name the directory after it.

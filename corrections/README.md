@@ -50,13 +50,13 @@ wrong one is silent and ruins the labels.
 | Folder | Encoding | Contents | Use when |
 |---|---|---|---|
 | `../data/masks/` | ten-value source encoding | the **whole** dataset, already corrected | normal use — this is the dataset |
-| `masks_v1/` | ten-value source encoding | the three **original, wrong** masks | you want to see what changed, or you are patching a Mendeley v1 download |
-| `masks_v2/` | ten-value source encoding | the three **corrected** masks | you are patching a Mendeley v1 download |
+| `masks_v1/` | ten-value source encoding | the three **original, wrong** masks | you want to see what changed, or you are patching an earlier v1 copy |
+| `masks_v2/` | ten-value source encoding | the three **corrected** masks | you are patching an earlier v1 copy |
 | `masks_9class/` | nine paper class ids `0`–`8` | the three corrected masks, converted | you already work in nine-class ids |
 
 `data/masks/` already contains the v2 labels, so **nothing has to be patched** if you
 start from this repository. The patch folders exist for people who downloaded v1 from
-Mendeley Data before this repository existed, and for auditing the change.
+before this repository existed, and for auditing the change.
 
 Rule of thumb: keep exactly one encoding per directory and name the directory after
 it. If unsure, run
@@ -72,7 +72,7 @@ published ones.
 
 ## Applying the patch
 
-Only needed for a Mendeley **v1** download. From this repository, `data/masks/` is
+Only needed for an earlier **v1** copy. From this repository, `data/masks/` is
 already corrected — skip this section.
 
 ```bash
@@ -105,6 +105,6 @@ with v2 for that reason, but a model retrained on v2 will differ slightly.
 
 Send the tile stem, the class you believe is wrong and, if possible, a screenshot of
 the source imagery. Corrections that can be verified are folded into the next release
-rather than into a fork, so that the DOI stays authoritative. Do not open a pull
-request that edits masks directly — the released archive is versioned on Mendeley
-Data, and a fork would silently diverge from it.
+rather than into a fork, so that this repository stays authoritative. Do not open a pull
+request that edits masks directly — the released masks are versioned here, and a
+fork would silently diverge from it.

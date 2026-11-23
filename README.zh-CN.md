@@ -8,10 +8,8 @@ data/images/   7,209 张 image_<id>.jpg
 data/masks/    7,209 张 image_<id>_lab.png   （十源值编码，已含 v2 修正）
 ```
 
-同一份数据也以 DOI 归档在 Mendeley Data，引用时请用 DOI：
-
-> **DOI: [10.17632/5pxk3ym2yv](https://doi.org/10.17632/5pxk3ym2yv)**
-> v2 直接链接：<https://data.mendeley.com/datasets/5pxk3ym2yv/2>
+v1 有三张影像块的类别整体标错，v2 已修正；本仓库发布的就是修正后的 v2，
+详见 [`ERRATUM.md`](ERRATUM.md)。
 
 训练与评测代码在 [`solidago-canadensis-segmentation`](https://github.com/CCelliniaTTexas/solidago-canadensis-segmentation)。
 
@@ -125,7 +123,7 @@ python tools/materialize_splits.py --data data --out splits
 
 **`data/masks/` 里已经是修正后的结果，从本仓库开始用不需要再打补丁。**
 
-`corrections/` 下的三个目录是给"已经从 Mendeley 下载过 v1"的人用的，编码不同，
+`corrections/` 下的三个目录是给"手上已有 v1 副本"的人用的，编码不同，
 **不要拿错**：
 
 - `corrections/masks_v1/` — 修正前的原始错误掩码（十源值编码），用于对照
@@ -155,7 +153,7 @@ python tools/materialize_splits.py --data data --out splits
 数据、掩码与元数据均以 **CC BY 4.0** 发布，可自由使用与改编（含商业用途），
 需注明出处并链接许可协议。见 [`LICENSE`](LICENSE)。
 
-引用请同时给出数据集 DOI 与论文。格式见 [`CITATION.cff`](CITATION.cff)。
+引用请给出论文与仓库地址。格式见 [`CITATION.cff`](CITATION.cff)。
 
 ---
 
@@ -163,5 +161,5 @@ python tools/materialize_splits.py --data data --out splits
 
 于志锋 yu@hznu.edu.cn
 
-发现新的错误影像块欢迎提 issue 或邮件。**请不要直接提 PR 改掩码**——正式归档在
-Mendeley Data 上，分叉出去会与 DOI 版本不一致。能对照原图核实的修正会并入下一版。
+发现新的错误影像块欢迎提 issue 或邮件。**请不要直接提 PR 改掩码**——正式版本在本仓库中，
+分叉出去会与正式版本不一致。能对照原图核实的修正会并入下一版。

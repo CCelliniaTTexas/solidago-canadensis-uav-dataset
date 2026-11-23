@@ -13,12 +13,9 @@ data/images/   7,209 × image_<id>.jpg
 data/masks/    7,209 × image_<id>_lab.png     (ten-value encoding, v2-corrected)
 ```
 
-The same data is archived with a DOI on Mendeley Data, which is the citable version:
-
-> **DOI: [10.17632/5pxk3ym2yv](https://doi.org/10.17632/5pxk3ym2yv)** — version 1
-> for the original release, version 2 for the corrected release described in
-> [`ERRATUM.md`](ERRATUM.md).
-> Direct link to v2: <https://data.mendeley.com/datasets/5pxk3ym2yv/2>
+Version 1 of the data had three tiles with wholesale class errors; version 2
+corrects them, and version 2 is what this repository ships — see
+[`ERRATUM.md`](ERRATUM.md).
 
 The training pipeline and the benchmark numbers of the accompanying article
 are in [`solidago-canadensis-segmentation`](https://github.com/CCelliniaTTexas/solidago-canadensis-segmentation).
@@ -149,8 +146,6 @@ Notes on the definitions:
 │   ├── verify_encoding.py        detect the encoding of a mask folder
 │   ├── check_dataset.py          check the data against the metadata
 │   └── materialize_splits.py     build train/valid/test folders if you want them
-├── docs/
-│   └── mendeley_upload_form_original.txt  original upload notes, for provenance
 └── data/
     ├── README.md                 the data, the split, and the split caveat
     ├── images/                   7,209 × image_<id>.jpg
@@ -169,9 +164,8 @@ cd solidago-canadensis-uav-dataset
 ls data/images | head
 ```
 
-The same data is DOI-archived on Mendeley Data
-([10.17632/5pxk3ym2yv](https://doi.org/10.17632/5pxk3ym2yv)). Cite that DOI; treat the
-repository as the working copy. If they ever disagree, the DOI is authoritative.
+This repository is the distribution point for the data: the tiles, masks and
+metadata here are the version to use, and the citation below points at it.
 
 The tile stems in `metadata/splits/*.txt` are the join key:
 
@@ -250,7 +244,7 @@ imagery. Only the class of the affected regions changed; the geometry is untouch
 start from this repository. Exact pixel-level transitions:
 [`corrections/corrections_report.csv`](corrections/corrections_report.csv). The
 before/after files are in `corrections/masks_v1/` and `corrections/masks_v2/`, both in
-the released ten-value encoding, for anyone patching a Mendeley v1 download;
+the released ten-value encoding, for anyone patching an earlier v1 copy;
 `corrections/masks_9class/` holds the corrected three already converted.
 
 Nothing else changed in v2: the tile count, the splits and the file names are
@@ -314,20 +308,20 @@ two decimals.
 
 ## Citation
 
-If you use this dataset, cite the paper and the dataset DOI. Machine-readable
+If you use this dataset, cite the paper and this repository. Machine-readable
 metadata is in [`CITATION.cff`](CITATION.cff):
 
 ```bibtex
-@dataset{wang_solidago_uav_2026,
-  author    = {Wang, Jiajie and Gao, Xu and Qiu, Yichun and Liu, Haijian and
-               Wang, Ben and Zhou, Bin and Yuan, Xiaohong and Shum, C. K. and
-               Yu, Zhifeng},
-  title     = {A nine-class UAV dataset of Solidago canadensis, Daishan Island,
-               Zhoushan, China},
-  year      = {2026},
-  publisher = {Mendeley Data},
-  version   = {2},
-  doi       = {10.17632/5pxk3ym2yv.2}
+@misc{wang_solidago_uav_2026,
+  author       = {Wang, Jiajie and Gao, Xu and Qiu, Yichun and Liu, Haijian and
+                  Wang, Ben and Zhou, Bin and Yuan, Xiaohong and Shum, C. K. and
+                  Yu, Zhifeng},
+  title        = {A nine-class UAV dataset of Solidago canadensis, Daishan Island,
+                  Zhoushan, China},
+  year         = {2026},
+  version      = {2},
+  howpublished = {\url{https://github.com/CCelliniaTTexas/solidago-canadensis-uav-dataset}},
+  note         = {Nine-class UAV imagery, masks and splits}
 }
 ```
 
@@ -355,7 +349,7 @@ See [`LICENSE`](LICENSE).
 Zhifeng Yu — yu@hznu.edu.cn
 Questions, corrections and additional flagged tiles are welcome as issues or email;
 corrections that can be verified against the source imagery will be folded into the
-next version rather than into a fork, so that the DOI stays authoritative.
+next version rather than into a fork, so that this repository stays authoritative.
 
 ## Versioning
 

@@ -1,10 +1,10 @@
 # Erratum and patch — nine-class UAV dataset of *Solidago canadensis*
 
-Patch to [10.17632/5pxk3ym2yv.1](https://doi.org/10.17632/5pxk3ym2yv.1)
+Patch to version 1 of this dataset
 Version: v2 · Date: 2026-10-29 · Contact: Zhifeng Yu, yu@hznu.edu.cn
 
 This document is the authoritative record of what version 2 changes. It supersedes
-the erratum text shipped with the Mendeley v2 upload, which is unchanged in
+the erratum distributed with the v2 data release, which is unchanged in
 substance but less precise about the tile-level numbers.
 
 ---
@@ -109,7 +109,7 @@ masks for all 7,209 tiles, in the same ten-value encoding as v1. Convert as usua
 python tools/convert_masks_10to9.py --src data/masks --dst masks_9class/
 ```
 
-**Starting from a Mendeley v1 download:** overwrite the three tiles and convert:
+**Starting from an earlier v1 copy:** overwrite the three tiles and convert:
 
 ```bash
 cp corrections/masks_v2/*_lab.png path/to/masks_v1/

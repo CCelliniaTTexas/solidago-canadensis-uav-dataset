@@ -74,7 +74,7 @@ data/images/image_10353.jpg
 data/masks/image_10353_lab.png
 ```
 
-The suffix is kept from the original archive so that file names match the Mendeley
+The suffix is kept from the original archive so that file names match the original
 release and the paper's supplementary material. `tools/check_dataset.py` and
 `tools/materialize_splits.py` accept either `image_<id>.png` or `image_<id>_lab.png`.
 
@@ -94,5 +94,5 @@ Two consequences worth knowing before you fork:
   files. Publish derived sets (for example the converted nine-class masks) as a release
   asset rather than as a commit.
 
-The DOI-archived copy on Mendeley Data remains the authoritative, citable version. If
-the two ever disagree, the DOI wins — and please open an issue so it can be fixed here.
+This repository is the authoritative version. If a copy you obtained elsewhere
+disagrees, please open an issue so it can be fixed here.
