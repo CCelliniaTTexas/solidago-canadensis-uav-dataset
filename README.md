@@ -20,6 +20,9 @@ The same data is archived with a DOI on Mendeley Data, which is the citable vers
 > [`ERRATUM.md`](ERRATUM.md).
 > Direct link to v2: <https://data.mendeley.com/datasets/5pxk3ym2yv/2>
 
+The training pipeline and the benchmark numbers of the accompanying article
+are in [`solidago-canadensis-segmentation`](https://github.com/CCelliniaTTexas/solidago-canadensis-segmentation).
+
 ---
 
 ## ⚠️ Read this first: the masks are **not** in 0–8 order
@@ -161,8 +164,8 @@ Notes on the definitions:
 It is already here. Clone and you have all 7,209 tiles:
 
 ```bash
-git clone https://github.com/<your-org>/<this-repo>.git
-cd <this-repo>
+git clone https://github.com/CCelliniaTTexas/solidago-canadensis-uav-dataset.git
+cd solidago-canadensis-uav-dataset
 ls data/images | head
 ```
 
@@ -185,8 +188,8 @@ with the Git CLI. No Git LFS is needed: no file exceeds 20 kB.
 ## Quick start
 
 ```bash
-git clone https://github.com/<your-org>/<this-repo>.git
-cd <this-repo>
+git clone https://github.com/CCelliniaTTexas/solidago-canadensis-uav-dataset.git
+cd solidago-canadensis-uav-dataset
 
 python -m pip install numpy pillow
 

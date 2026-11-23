@@ -13,6 +13,8 @@ data/masks/    7,209 张 image_<id>_lab.png   （十源值编码，已含 v2 修
 > **DOI: [10.17632/5pxk3ym2yv](https://doi.org/10.17632/5pxk3ym2yv)**
 > v2 直接链接：<https://data.mendeley.com/datasets/5pxk3ym2yv/2>
 
+训练与评测代码在 [`solidago-canadensis-segmentation`](https://github.com/CCelliniaTTexas/solidago-canadensis-segmentation)。
+
 英文完整说明见 [`README.md`](README.md)，本页只列中文使用者最容易出错的要点。
 
 ---
@@ -76,7 +78,7 @@ PNG 中的源值 : 0   1   2   3   4   5   6   7   8   9
 ## 快速开始
 
 ```bash
-git clone https://github.com/<你的账号>/solidago-canadensis-uav-dataset.git
+git clone https://github.com/CCelliniaTTexas/solidago-canadensis-uav-dataset.git
 cd solidago-canadensis-uav-dataset
 python -m pip install numpy pillow
 
