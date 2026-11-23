@@ -1,0 +1,10 @@
+class_id,class_name,description,png_source_values,n_source_values,proportion_pct
+0,Background,Areas without a clear land-cover attribution; in practice mainly padding pixels left by image rotation and rectangular cropping,6,1,0.19
+1,S. canadensis,Target species of this study,2,1,11.09
+2,Discarded construction materials,"Human debris such as bricks, scrap metal and timber",7,1,10.02
+3,Other vegetation,"Herbaceous plants, shrubs and trees other than the target species",3,1,29.15
+4,Concrete pavement,Grey-white concrete roads,1 4,2,14.50
+5,Bare ground,Exposed soil without vegetation cover,0,1,8.07
+6,Buildings,"Roofs and facades of houses, warehouses and sheds",5,1,19.54
+7,Vehicle roofs,Roofs of cars and engineering vehicles,8,1,0.91
+8,Asphalt pavement,Black or dark grey asphalt roads,9,1,6.52

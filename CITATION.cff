@@ -1,0 +1,74 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite both the dataset DOI and the article that describes it."
+type: dataset
+title: "A nine-class UAV dataset of Solidago canadensis, Daishan Island, Zhoushan, China"
+abstract: >-
+  7,209 manually annotated 256x256 UAV tiles (ground sampling distance 3.4 cm,
+  acquired 25 October 2025) of a rural-urban fringe on Daishan Island, Zhoushan,
+  Zhejiang, China, labelled with nine classes centred on the invasive perennial
+  Solidago canadensis L. Tiles are split 5,046 / 1,442 / 721 by spatially contiguous
+  blocks so that no training tile is adjacent to a test tile.
+authors:
+  - family-names: Wang
+    given-names: Jiajie
+  - family-names: Gao
+    given-names: Xu
+  - family-names: Qiu
+    given-names: Yichun
+  - family-names: Liu
+    given-names: Haijian
+  - family-names: Wang
+    given-names: Ben
+  - family-names: Zhou
+    given-names: Bin
+  - family-names: Yuan
+    given-names: Xiaohong
+  - family-names: Shum
+    given-names: C.K.
+  - family-names: Yu
+    given-names: Zhifeng
+    email: yu@hznu.edu.cn
+    affiliation: "Hangzhou Normal University"
+version: "2"
+date-released: "2026-10-29"
+license: CC-BY-4.0
+doi: 10.17632/5pxk3ym2yv.2
+url: "https://data.mendeley.com/datasets/5pxk3ym2yv/2"
+keywords:
+  - Solidago canadensis L.
+  - semantic segmentation
+  - DeepLabV3+
+  - cross-layer cross-attention
+  - UAV remote sensing
+  - ResNet-50
+  - invasive plant
+  - land cover
+  - dataset
+references:
+  - type: article
+    title: >-
+      A Multi-Class UAV Dataset for Invasive Solidago canadensis Mapping and a
+      Controlled Evaluation of When Cross-Attention Helps
+    authors:
+      - family-names: Wang
+        given-names: Jiajie
+      - family-names: Gao
+        given-names: Xu
+      - family-names: Qiu
+        given-names: Yichun
+      - family-names: Liu
+        given-names: Haijian
+      - family-names: Wang
+        given-names: Ben
+      - family-names: Zhou
+        given-names: Bin
+      - family-names: Yuan
+        given-names: Xiaohong
+      - family-names: Shum
+        given-names: C.K.
+      - family-names: Yu
+        given-names: Zhifeng
+    notes: >-
+      The accompanying manuscript, describing the annotation protocol, the spatially
+      blocked split and the baseline evaluation. Add journal, volume and pages here
+      once it is published.

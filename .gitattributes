@@ -1,0 +1,18 @@
+# Keep text files text, whatever Windows does to them.
+* text=auto
+
+*.md   text eol=lf
+*.txt  text eol=lf
+*.csv  text eol=lf
+*.py   text eol=lf
+*.cff  text eol=lf
+
+# Binary assets that must never be line-ending converted.
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+
+# The 14,418 tiles and masks under data/ are tracked directly, not through Git LFS:
+# no file exceeds 20 kB and the whole set is under 100 MB, so a plain clone is enough.
+# If you ever re-release masks repeatedly, switch data/ to LFS instead — binary blobs
+# do not delta-compress, so every committed edit costs the full file size.

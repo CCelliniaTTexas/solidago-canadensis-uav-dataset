@@ -1,0 +1,5 @@
+split,tiles,pixels,share_of_tiles_pct,share_of_pixels_pct
+train,5046,330694656,70.00,70.00
+valid,1442,94502912,20.00,20.00
+test,721,47251456,10.00,10.00
+total,7209,472449024,100.00,100.00
